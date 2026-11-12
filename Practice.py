@@ -1,70 +1,70 @@
 
-# For LOOP
+# # For LOOP
 
-# for i in range(0,11):
-#     print(i)
+# # for i in range(0,11):
+# #     print(i)
 
-# for i in range(0,21):
-#     if i %2==0:
-#         print(i)
+# # for i in range(0,21):
+# #     if i %2==0:
+# #         print(i)
 
-# for i in range(0,21):
-#     if i %2!=0:
-#         print(i) 
+# # for i in range(0,21):
+# #     if i %2!=0:
+# #         print(i) 
 
-# num =5 
+# # num =5 
 
-# for i in range(1,11):
-#     print(num, "x", i, "=", num*i)
+# # for i in range(1,11):
+# #     print(num, "x", i, "=", num*i)
 
-# total =0
+# # total =0
 
-# for i in range(1,11):
-#     total = total + 1
+# # for i in range(1,11):
+# #     total = total + 1
 
-# print("Total:", total)
+# # print("Total:", total)
 
-# num = 5
-# fact = 1
+# # num = 5
+# # fact = 1
 
-# for i in  range(1, num + 1):
-#     fact = fact* i
+# # for i in  range(1, num + 1):
+# #     fact = fact* i
 
-# print("Factorial:", fact)
-
-
-# chars= "Python"
-
-# for char in chars:
-#     print(char)
-
-# names = ["Aarti","Suraj","Tejas","OM","Yash","Yash"]
-
-# for name in names:
-#     print(name)
+# # print("Factorial:", fact)
 
 
-# num =[10,30,20,45,200,60,202,756]
+# # chars= "Python"
 
-# largest = num[0]
+# # for char in chars:
+# #     print(char)
 
-# for i in num:
-#     if i > largest:
-#         largest=i
-# print("The Largest number:", largest)
+# # names = ["Aarti","Suraj","Tejas","OM","Yash","Yash"]
 
-# text = "python programming"
-# count = 0
+# # for name in names:
+# #     print(name)
 
-# for char in text:
-#     if char in "aeiou":
-#         count +=1
 
-# print("Number of Vowels:", count)
+# # num =[10,30,20,45,200,60,202,756]
 
-#While LOOP
+# # largest = num[0]
 
-# i = 1
+# # for i in num:
+# #     if i > largest:
+# #         largest=i
+# # print("The Largest number:", largest)
+
+# # text = "python programming"
+# # count = 0
+
+# # for char in text:
+# #     if char in "aeiou":
+# #         count +=1
+
+# # print("Number of Vowels:", count)
+
+# #While LOOP
+
+# # i = 1
 
 # while i <=10:
 #     print(i)
@@ -98,31 +98,121 @@
 #     num //= 10
 #     count += 1
 
-# print("The number of digits:", count)
+# # print("The number of digits:", count)
 
-# correct_number = 4
+# # correct_number = 4
 
-# guess = int(input("Enter a number:"))
+# # guess = int(input("Enter a number:"))
 
-# while guess != correct_number:
-#     print("Wrong Number!!")
+# # while guess != correct_number:
+# #     print("Wrong Number!!")
 
-#     guess = int(input("Enter a number" ))
+# #     guess = int(input("Enter a number" ))
 
-# print("Correct Guess!!")
+# # print("Correct Guess!!")
 
 
-# Loop Control statements
+# # Loop Control statements
 
+# # for i in range(20):
+# #     if i ==12:
+# #         break
+# #     print(i)
+
+# # to skip any value  
 # for i in range(20):
 #     if i ==12:
-#         break
+#         continue
 #     print(i)
 
-# to skip any value  
-for i in range(20):
-    if i ==12:
-        continue
-    print(i)
+# # Defining variale for indian railway system  
+# train_name= "Rajdhani Express"
+# train_number = 12301
+# ticket_price = 2450.50
+# is_ac_available =True
+# seat_numbers = [1,2,3,4,5]
+
+# print("Train Name :" ,train_name)
+# print("Train Number :", train_number)
+# print("Train Price :", ticket_price)
+# print("AC Availability :", is_ac_available)
+# print("Seat numbers :", seat_numbers)
+
+
+
+
+# print("The data type of train_name:", type(train_name))
+# print("The data type of train_number:", type(train_number))
+# print("The data type of ticket_price:", type(ticket_price))
+# print("The data type of is_ac_available:", type(is_ac_available))
+# print("The data type of seat_numbers:", type(seat_numbers))
+
+
+# print(" === Indian Railway Booking System ===")
+# passenger_name=input("Enter passenger Name :")
+# age = int(input("Enter Age:"))
+# destination= input("Enter Destination:")
+
+# print("\n=== Booking details ===")
+# print(f"passenger:{passenger_name}")
+# print(f"age:{age}")
+# print(f"destination:{destination}")
+# print("Booking Confirmed")
+
+# base_price = 1500
+# service_charge =100
+# total_price= base_price + service_charge
+
+# print(f"Base price: ₹{base_price}")
+# print(f"Service Charge : ₹{service_charge}")
+# print(f"Total Price : ₹{total_price}")
+
+# passenger_age=25
+# senior_citizen_age = 60
+# is_senior = passenger_age>= senior_citizen_age
+
+# print(f"\nIs passenger senior citizen? {is_senior}")
+
+# has_ticket =True
+# has_id_proof =True
+# can_board= has_ticket and  has_id_proof
+
+# print(f"can board Train?{can_board}")
+
+
+# age = int(input("Enter Passenger age :"))
+
+# if age < 5:
+#     price = 0
+#     category= "Infant (Free)"
+# elif age < 12: 
+#     price = 750
+#     category = "child (50 % Discount)"
+# elif age >= 60:
+#     price = 1200
+#     category=" Senior Citizen {20% Discount }"
+# else:
+#     price = 1500
+#     category = "adult"
+
+# print(f"Category:{category}")
+# print(f"Ticke Price:{price}")
+
+
+# trains =[
+#     {"name":"Rajdhani Express",
+#      "number": 12301,
+#      "destination":"New Delhi"},
+#     {"name":"Shatabi Expres",
+#     "number": 12001,
+#     "destination":"Chennai"} ,
+#      {"name":"Duronto Express",
+#     "number": 12291,
+#     "destination":"Mumbai"}
+# ]
+
+# print("Available Trains: ")
+# for train in trains :
+#     print(f"{train['number']} - {train['name']} to {train['destination']}")
 
 
