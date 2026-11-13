@@ -134,39 +134,41 @@
 #         multiplier= 1.5
 #     elif class_type =="AC 2 Tier":
 #         multiplier= 2.0
-#     elif class_type =="AC 1st class":
-#         multiplier = 3.0
-#     else:
-#         multiplier= 1.0
-#     price= distance * base_rate*multiplier
+# #     elif class_type =="AC 1st class":
+# #         multiplier = 3.0
+# #     else:
+# #         multiplier= 1.0
+# #     price= distance * base_rate*multiplier
 
-#     return round(price,2)
+# #     return round(price,2)
 
-# distance =500
-# class_type= "AC 2 Tier"
-# price= calculate_ticket_price(distance,class_type)
+# # distance =500
+# # class_type= "AC 2 Tier"
+# # price= calculate_ticket_price(distance,class_type)
 
-# print(f"Price for {distance}km in {class_type} :₹{price}")
+# # print(f"Price for {distance}km in {class_type} :₹{price}")
 
-# Ticket Booking 
+# # Ticket Booking 
 
-def book_ticket(passenger_name,age,destination,class_type="Sleeper"):
-    ticket ={
-        "Passenger Name":passenger_name,
-        "Age": age,
-        "Destination":destination,
-        "Booking ID":f"BK{hash(passenger_name)%10000:04d}"
-    }
-    return ticket
+# def book_ticket(passenger_name,age,destination,class_type="Sleeper"):
+#     ticket ={
+#         "Passenger Name":passenger_name,
+#         "Age": age,
+#         "Destination":destination,
+#         "Booking ID":f"BK{hash(passenger_name)%10000:04d}"
+#     }
+#     return ticket
 
-def get_passenger_details(*args,**kwargs):
-    print("Positional arguments:", args)
-    print("Keyword arguments:",kwargs)
+# def get_passenger_details(*args,**kwargs):
+#     print("Positional arguments:", args)
+#     print("Keyword arguments:",kwargs)
 
-ticket1 = book_ticket("Rahul Kumar",28,"Mumbai")
-ticket2 = book_ticket("Priya Singh",32,"Delhi","AC 3 Tier")
+# ticket1 = book_ticket("Rahul Kumar",28,"Mumbai")
+# ticket2 = book_ticket("Priya Singh",32,"Delhi","AC 3 Tier")
 
-print("\nTicket 1:",ticket1)
-print("Ticket 2:",ticket2)
+# print("\nTicket 1:",ticket1)
+# print("Ticket 2:",ticket2)
 
-get_passenger_details("Rahul",28,"Mumbai",class_type="Sleeper",meal_prefernce="Veg")
+# get_passenger_details("Rahul",28,"Mumbai",class_type="Sleeper",meal_prefernce="Veg")
+
+
