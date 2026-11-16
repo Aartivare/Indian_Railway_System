@@ -289,14 +289,82 @@
 # total_score(85,97,99)
 
 
-def employee_details(**details):
-    for key, value in details.items():
-        print(key,":", value)
+# def employee_details(**details):
+#     for key, value in details.items():
+#         print(key,":", value)
 
-employee_details(
-    Emp_name = "Aarti",
-    Age= 27,
-    Department= "IT",
-    Salary="10k"
+# employee_details(
+#     Emp_name = "Aarti",
+#     Age= 27,
+#     Department= "IT",
+#     Salary="10k"
 
-)
+# )
+
+
+# # List 
+
+# states = ["Maharashtra","Kerala","Punjab","Tamil Nadu","Gujarat"]
+
+# print("Original List:",states)
+
+# # Add Elements 
+# states.append("Karnataka")
+# states.insert(2,"Rajasthan")        #insert at index 
+# print("After Append & Insert :", states)
+
+
+# #Extend With another list 
+
+# states.extend(["Goa","Bihar"])
+# print("After Extend :",states)
+
+# # Remove elements
+
+# states.remove("Punjab")   # remove Specifuc element 
+# popped = states.pop()           #remove last element 
+# print("Removed Element:", popped)
+# print("After Remove & Pop:",states)
+
+# # sorting & reversing
+
+# states.sort()
+# print("Sorted List:",states)
+# states.reverse()
+# print("Reversed List:",states)
+
+# # index & count
+
+# print("Index of Kerala :",states.index("Kerala"))
+# print("Count of Kerala :",states.count("Kerala"))
+
+
+# # Copy & Clear  
+
+# copy_states=states.copy()
+# print("Copied List:",copy_states)
+# states.clear()
+# print("Cleared List:",states)
+
+
+# TUPLE 
+cities =("Mumbai","Delhi","Bengaluru","Chennai","Kolkata","Mumbai")
+
+print("Tuple:", cities)
+
+# count
+print("Count  of Mumbai:",cities.count("Mumbai"))
+
+#Index
+print("Index of Chennai:", cities.index("Chennai"))
+
+
+# Length 
+print("Length :", len(cities))
+
+#Mmebership
+print("Delhi in Tuple?:","Delhi" in cities)
+
+# min and max (alphabetical )
+print("Min :",min(cities))
+print("Max :",max(cities))
