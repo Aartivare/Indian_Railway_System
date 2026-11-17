@@ -347,24 +347,171 @@
 # print("Cleared List:",states)
 
 
-# TUPLE 
-cities =("Mumbai","Delhi","Bengaluru","Chennai","Kolkata","Mumbai")
+# # TUPLE 
+# cities =("Mumbai","Delhi","Bengaluru","Chennai","Kolkata","Mumbai")
 
-print("Tuple:", cities)
+# print("Tuple:", cities)
 
-# count
-print("Count  of Mumbai:",cities.count("Mumbai"))
+# # count
+# print("Count  of Mumbai:",cities.count("Mumbai"))
 
-#Index
-print("Index of Chennai:", cities.index("Chennai"))
+# #Index
+# print("Index of Chennai:", cities.index("Chennai"))
 
 
-# Length 
-print("Length :", len(cities))
+# # Length 
+# print("Length :", len(cities))
 
-#Mmebership
-print("Delhi in Tuple?:","Delhi" in cities)
+# #Mmebership
+# print("Delhi in Tuple?:","Delhi" in cities)
 
-# min and max (alphabetical )
-print("Min :",min(cities))
-print("Max :",max(cities))
+# # min and max (alphabetical )
+# print("Min :",min(cities))
+# print("Max :",max(cities))
+
+
+# Dictionary  
+
+# capitals = {
+#     "Maharashtra": "Mumbai",
+#     "Kerala" : "Thiruvananthapuram",
+#     "Tamil Nadu": "Chennai",
+#     "Gujarat": "Gandhinagar"
+# }
+
+# print("Dictionary:",capitals)
+
+# # Get & Access
+# print("Capital of Kerala :", capitals.get("Kerala"))
+
+# # Key, values .Items
+# print("States :", capitals.keys())
+# print("Capitals :",capitals.values())
+# print("Pairs : ", capitals.items())
+
+# #Update & add
+
+# capitals.update({"Karnataka": "Bengaluru"})
+# capitals["Pujab"]:"Chandigarh"
+# print("After Update : ", capitals)
+
+# # remove
+# capitals.pop("Tamil Nadu")        # remove the keys 
+# capitals.popitem()                 # remove the last inserted 
+# print("After Pop & Popitems:",capitals)
+
+# # Copy and clear  
+# copy_caps = capitals.copy()
+# capitals.clear()
+# print("Copied:", copy_caps)
+# print("Cleared:", capitals)
+
+# Set  
+
+# languages= {"Hindi","English","Marathi","Tamil","Telugu"}
+# print("Original Set :",languages)
+
+# # add & Remove  
+# languages.add("Gujarati")
+# languages.discard("English")
+# print("After add & Discard:", languages)
+
+# # remove (Error if not present )
+# languages.remove("Hindi")
+
+# # set operations
+# south = {"Tamil","Telugu","Kannada"}
+# print("Union:", languages.union(south))
+# print("Intersection:",languages.intersection(south))
+# print("Difference:", languages.difference(south))
+# print("Symmetric Difference:",languages.symmetric_difference(south))
+
+# #copy & clear
+# copy_lang =languages.copy()
+# languages.clear()
+# print("Coipied:",copy_lang)
+# print("Cleared:",languages)
+
+# String 
+
+# movie = "Sholay is a Classic Bollywood Movie"
+
+# print("Original:",movie)
+
+# # case
+# print(movie.upper())
+# print(movie.lower())
+# print(movie.title())
+# print(movie.capitalize())
+# print(movie.swapcase())
+
+# # check
+# print(movie.startswith("Sholay"))
+# print(movie.endswith("Movie"))
+# print("Is Alpha?",movie.isalpha())     # spaces break alpha
+# print("Is Digit?",movie.isdigit())
+
+# # find and replace  
+# print("Find 'Classic:'",movie.find("Classic"))
+# print(movie.replace("Classic","Legendary"))
+
+# # Split & Join 
+# Words = movie.split()
+# print("Split:",Words)
+# joined = "-".join(Words)
+# print("Joined:",joined)
+
+# # Strip
+# line = "  Jai Hind   "
+
+# print("Stripped :",line.strip())
+# print("left Strip:",line.lstrip())
+# print("Right Strip:",line.rstrip())
+
+# # COunt & Index
+# print("Count of 'o':",movie.count("o"))
+# print("Index of 'Bollywood':",movie.index("Bollywood"))
+
+# #Length
+# print("Length:", len(movie))
+
+# Date and Time Functions  
+
+import datetime
+
+# Current date & Time 
+now = datetime.datetime.now()
+print("Now:",now)
+
+# Today 
+today = datetime.date.today()
+print("Today:",today)
+
+# Specific date (Republic day)
+republic_day = datetime.date(1950,1,26)
+print("Republic day:",republic_day.strftime("%d-%B-%Y"))
+
+# Time Difference
+diff= today-republic_day
+print("Days  since Republic Day:",diff.days)
+
+# Current components  
+print("Year:", now.year)
+print("Month:",now.month)
+print("Day:",now.day)
+print("Hour:",now.hour)
+print("Minute:",now.minute)
+print("Second:",now.second)
+
+
+# Create a time object  
+t = datetime.time(10,30,15)
+print("Custom time :", t)
+
+# combine date & time
+dt =datetime.datetime.combine(today,t)
+print("Combined DateTime :",dt)
+
+#Formattimng 
+print("Formatted :", now.strftime("%A, %d %B %Y, %I:%M: %p"))
+
