@@ -480,38 +480,40 @@
 import datetime
 
 # Current date & Time 
-now = datetime.datetime.now()
-print("Now:",now)
+# now = datetime.datetime.now()
+# print("Now:",now)
 
-# Today 
-today = datetime.date.today()
-print("Today:",today)
+# # Today 
+# today = datetime.date.today()
+# print("Today:",today)
 
-# Specific date (Republic day)
-republic_day = datetime.date(1950,1,26)
-print("Republic day:",republic_day.strftime("%d-%B-%Y"))
+# # Specific date (Republic day)
+# republic_day = datetime.date(1950,1,26)
+# print("Republic day:",republic_day.strftime("%d-%B-%Y"))
 
-# Time Difference
-diff= today-republic_day
-print("Days  since Republic Day:",diff.days)
+# # Time Difference
+# diff= today-republic_day
+# print("Days  since Republic Day:",diff.days)
 
-# Current components  
-print("Year:", now.year)
-print("Month:",now.month)
-print("Day:",now.day)
-print("Hour:",now.hour)
-print("Minute:",now.minute)
-print("Second:",now.second)
+# # Current components  
+# print("Year:", now.year)
+# print("Month:",now.month)
+# print("Day:",now.day)
+# print("Hour:",now.hour)
+# print("Minute:",now.minute)
+# print("Second:",now.second)
 
 
-# Create a time object  
-t = datetime.time(10,30,15)
-print("Custom time :", t)
+# # Create a time object  
+# t = datetime.time(10,30,15)
+# print("Custom time :", t)
 
-# combine date & time
-dt =datetime.datetime.combine(today,t)
-print("Combined DateTime :",dt)
+# # combine date & time
+# dt =datetime.datetime.combine(today,t)
+# print("Combined DateTime :",dt)
 
-#Formattimng 
-print("Formatted :", now.strftime("%A, %d %B %Y, %I:%M: %p"))
+# #Formattimng 
+# print("Formatted :", now.strftime("%A, %d %B %Y, %I:%M: %p"))
+
+
 

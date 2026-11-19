@@ -171,4 +171,37 @@
 
 # get_passenger_details("Rahul",28,"Mumbai",class_type="Sleeper",meal_prefernce="Veg")
 
+# calculate discount
+
+# Calculate_discount = lambda price, discounted_percentage:price*(1 - discounted_percentage/100)
+
+# original_price = 1500
+
+# discounted_price =Calculate_discount(original_price,20)
+
+# print(f"Original:₹{original_price}, Discounted Price:₹{discounted_price}")
+
+
+# Trains details using build in functions  
+
+# train =[
+#     {"name":"Rajdhani","price":2500,"duration":16},
+#     {"name":"Shatabdi","price":1800,"duration":8},
+#     {"name":"Duronto","price":2000,"duration":12},
+# ]
+
+# # map
+
+# train_names = list(map(lambda x :x['name'],train))
+# print(f"\nTrain Names:{train_names}")
+
+# # Filter  
+
+# affordable_trains = list(filter(lambda x: x['price'] <2200,train))
+# print("Affordable Trains :",[t["name"]for  t in affordable_trains])
+
+# #Sorted 
+
+# sorted_by_price = sorted(train,key=lambda x:x["price"])
+# print("Sorted by price:", [t["name"] for t in sorted_by_price])
 

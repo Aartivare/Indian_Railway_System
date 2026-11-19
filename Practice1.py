@@ -23,6 +23,51 @@
 
 # print(f"average:",average)
 
+#4.Convert Kilometers to Meters
+
+# kilometers= float(input("Enter the Kilometers:"))
+# meters = kilometers*1000
+# print(f"{kilometers} km is equal to {meters} m.")
+
+# 5. Find Area of Square
+
+
+
+# 6. Convert String to Integer
+
+
+
+# 7. Find Remainder
+
+# remainder= 12 % 2
+# print("Remainder:",remainder)
+
+# 8. Calculate Total Marks and Percentage
+
+
+
+# 9. Convert Float to Integer
+
+# 10. Find Datatype of Variables
+
+# name = "Aarti"
+# age  = 20
+# price = 30.25
+
+# print("The data type of the name:",type(name))
+# print("The data type of the age:",type(age))
+# print("The data type of the price:",type(price))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
