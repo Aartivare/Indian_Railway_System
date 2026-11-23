@@ -516,4 +516,21 @@ import datetime
 # print("Formatted :", now.strftime("%A, %d %B %Y, %I:%M: %p"))
 
 
+class myclass:
+    total_students = 6
+
+    def __init__(self,name,age):
+        self.name =name
+        self.age =age
+    def info(self):
+        print(f"{self.name} is {self.age}years old!")
+std1=myclass("Venna",27)
+std2=myclass("Aarti",28)
+
+print(std1.age)
+print(std2.name)
+print(std1.info())
+print(std2.total_students)
+print(std1.total_students)
+print(myclass.total_students)
 
