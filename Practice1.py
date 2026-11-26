@@ -50,13 +50,13 @@
 
 # 10. Find Datatype of Variables
 
-# name = "Aarti"
-# age  = 20
-# price = 30.25
+name = "Aarti"
+age  = 20
+price = 30.25
 
-# print("The data type of the name:",type(name))
-# print("The data type of the age:",type(age))
-# print("The data type of the price:",type(price))
+print("The data type of the name:",type(name))
+print("The data type of the age:",type(age))
+print("The data type of the price:",type(price))
 
 
 

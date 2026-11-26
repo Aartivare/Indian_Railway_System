@@ -347,15 +347,102 @@
 
 #Polymorphism  
 
-class PaymentMethod:
-    def process_payment(Self,amount)
-        raise NotImplementedError("Subclass must implement abstarct method"
+# class PaymentMethod:
+#     def process_payment(Self,amount):
+#         raise NotImplementedError("Sub-class must implement abstract method")
 
-class CreditCard(PaymentMethod))
+# class CreditCard(PaymentMethod):
+#     def process_payment(Self, amount):
+#         return f"Processing {amount} via Credit Card ."
 
-         
+# class Debitcard(PaymentMethod):
+#     def process_payment(Self, amount):
+#         return f"Processing {amount} via Debit Card ."
+    
+# class UPI(PaymentMethod):
+#     def process_payment(Self, amount):
+#         return f"Processing {amount} via UPI."
+
+# class NetBanking(PaymentMethod):
+#     def process_payment(Self, amount):
+#         return f"Processing {amount} via NetBanking ."
+
+# def make_payment(payment_method,amount):
+#     return payment_method.process_payment(amount)
+
+# print("==== Payment Method ====")
+
+# payments = [
+#     CreditCard(),
+#     Debitcard(),
+#     UPI(),
+#     NetBanking()
+# ]
+
+# for payment in payments:
+#     print(make_payment(payment,1500))
 
 
+# Magic Method for customized Behvaiors  
 
 
+# class Ticket:
+#     def __init__(self,pnr,passenger_name):
+#         self.pnr = pnr
+#         self.passenger_name = passenger_name
+#     def __str__(self):
+#         return f"Ticket(PNR:{self.pnr}, Passenger : {self.passenger_name})"
+
+#     def __repr__(self):
+#         return f"Ticket(pnr='{self.pnr}', passenger_name ='{self.passenger_name}')"
+
+#     def __eq__(self, other):
+#         if isinstance(other,Ticket):
+#             return self.pnr == other.pnr
+#         return False
+
+# print ("=== Ticket Magic Methods ===")
+
+# ticket1 = Ticket("1234567890","Rahul Kumar")
+# ticket2 = Ticket("1234567890","Rahul Kumar")
+# ticket3 = Ticket("0987654321","Priya Singh")
+
+# print(f"User-Friendly :{ticket1}")
+# print(f"Developer -friendly :{repr(ticket2)}")
+# print(f"Ticekt1 ==Ticekt2 :{ticket1==ticket2}")
+# print(f"Ticekt1 ==Ticekt3 :{ticket1==ticket3}")
+
+
+# Train Schedule Managment  
+
+train_schedule=[]
+
+train_schedule.append({
+    "number": 12301,
+    "name": "Rajdhani Express",
+    "Departure": "14:00",
+    "arrival":"10:30",
+    "duration": "20h 30m "
+})
         
+train_schedule.append({
+    "number": 12001,
+    "name": "Shatabi Express",
+    "Departure": "06:00",
+    "arrival":"10:30",
+    "duration": "4h 30m "
+})  
+
+# List operations
+
+print("Train Schedules")
+print(f"Total Trains :{len(train_schedule)}")
+
+first_train =train_schedule[0]
+print(f" First Train :{first_train}")
+
+morining_trains =train_schedule[:1]
+print(f"Morning Trains:{[t['name'] for t in morining_trains]}")
+
+print(morining_trains)
+
